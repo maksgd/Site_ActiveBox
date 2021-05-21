@@ -99,7 +99,7 @@ p{
     flex-direction: column; /*Кажд. нов. элем. в блоке
     intro начнется с нов. строки */
     justify-content: center; /*Контент выровнить по центру по оси Y*/
-    height: 750px; /*Высота блока Intro*/
+    min-height: 100vh; /*Высота блока Intro*/
     padding-top: 100px;/*отступ текста от верха 
     страницы сайта*/
 
