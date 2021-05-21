@@ -105,7 +105,7 @@ p{
 
     background:#31344e
     url("img/intro-bg.jpg") 
-    center no-repeat;
+    center no-repeat; 
     background-size: cover; /*Для 
     пропорционального распределения размера изображения*/
 }
@@ -273,6 +273,7 @@ p{
 .works{
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .works__item{
@@ -533,25 +534,37 @@ opacity: 1;
 ==================== */
 
 .download{
-    margin: 90px 0;
+    height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     text-align: center;
+
+    background:#31344e
+    url("img/intro-bg.jpg") 
+    center no-repeat fixed; /*fixed, чтобы создать паралакс эффект*/
+    background-size: cover; /*Для 
+    пропорционального распределения размера изображения*/
 }
 
 .download__title{
     font-size: 28px;
-    color: #2d3033;
+    color: #ffffff;
     font-weight: 300;
     margin-bottom: 10px;
 }
 
 .download__text{
     font-size: 13px;
-    color: #2d3033;
+    color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
+
+
 
 /* Кнопка */
 .wrapper{
