@@ -887,9 +887,9 @@ opacity: 1;
         min-width: 260px;
     }
 
-    .download{
+    /* .download{
         margin: 50px 0;
-    }
+    } */
 
     .download__title{
         font-size: 24px;
