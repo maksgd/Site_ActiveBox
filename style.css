@@ -53,6 +53,19 @@ p{
     z-index: 1000;
 }
 
+.header.fixed{
+    position: fixed;
+    background: #31344e;
+
+    height: auto;
+}
+
+.header.fixed .header__inner{
+    padding: 15px 0;
+
+    border-bottom: 0;
+}
+
 
 .header__inner{
     display: flex; 
@@ -364,8 +377,8 @@ opacity: 1;
     border-radius: 150px;
 
     /* Анимация */
-    transform: scale(0); /*Появление изнутри*/
-    transition: all 0.8s ease 0s;
+    /* transform: scale(0); Появление изнутри
+    transition: all 0.8s ease 0s; */
 
 }
 
@@ -795,6 +808,24 @@ opacity: 1;
 
     .nav{
         display: none;
+        flex-direction: column;
+
+        text-align: right;
+        width: 100%;
+
+        background-color: #31344e;
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+
+    .nav.show{
+        display: flex;
+    }
+
+    .nav__link{
+        padding: 9px 15px;
     }
 
     .burger{
