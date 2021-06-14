@@ -1,4 +1,4 @@
-const animItems = document.querySelectorAll('._anim-items') // посик тех элементов, которым необходима анимация
+const animItems = document.querySelectorAll('._anim-items') // поиск тех элементов, которым необходима анимация
 
 if(animItems.length > 0) {  // Проверка на наличие
     window.addEventListener('scroll', animOnScroll);
